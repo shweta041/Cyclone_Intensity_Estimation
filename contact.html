@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Cyclone Intensity and Distance Estimation</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <style>
+        body {
+          font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+            sans-serif;
+          text-align: justify;
+          background-image: url("bg.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+  
+        nav {
+          height: 60px;
+        }
+  
+        nav ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          height: 100%;
+        }
+  
+        nav ul li {
+          margin: 0 40px;
+        }
+  
+        nav a {
+          color: rgb(0, 0, 0);
+          text-decoration: none;
+        }
+  
+        nav a:hover {
+          color: #ccc;
+        }
+  
+        header h1 {
+          text-align: center;
+          padding: 20px;
+        }
+  
+        section {
+          margin: 20px;
+        }
+  
+        section h2 {
+          font-size: 24px;
+        }
+  
+        #login-button {
+          background-color: #4caf50;
+          border: none;
+          color: white;
+          padding: 10px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+  
+        #login-button:hover {
+          background-color: #3e8e41;
+        }
+        nav ul img {
+          width: 17%;
+          margin-left: -80%;
+          margin-top: 3%;
+        }
+        section p {
+          font-size: 115%;
+        }
+        footer {
+          background-color: #ffffff57;
+          padding: 20px;
+          text-align: center;
+          margin-top: 40px;
+        }
+        footer ul {
+          list-style-type: none;
+        }
+        footer a {
+          color: #4a4a4a;
+          text-decoration: none;
+        }
+  
+        footer a:hover {
+          color: #007bff;
+        }
+        form {
+            width: 50%;
+            margin: auto;
+        }
+
+        form input,
+        form textarea,
+        form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        form textarea {
+            height: 150px;
+        }
+
+        form button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #0056b3;
+        }
+      </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><img src="cyclone logo.jpg" alt="LOGO" /></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="prediction.html">Prediction</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li>
+          <a href="login.html"><button id="login-button">Login</button></a>
+        </li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+
+    <section>
+      <h2>Get in Touch</h2>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>
+        Links to relevant resources such as official meteorological agencies,
+        disaster preparedness websites, and emergency contacts:
+      </p>
+      <ul>
+        <li>
+          <a
+            href="https://www.nhc.noaa.gov/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >National Hurricane Center (USA)</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.metoffice.gov.uk/weather/warnings-and-advice/tropical-cyclones"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Met Office (UK)</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.bom.gov.au/cyclone/index.shtml"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Bureau of Meteorology (Australia)</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weather-preparedness.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Environment Canada</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            >American Red Cross</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.globalcyclonemonitor.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Global Cyclone Monitor</a
+          >
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
