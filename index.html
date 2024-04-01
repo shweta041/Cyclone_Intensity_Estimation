@@ -1,344 +1,211 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Cyclone Intensity and Distance Estimation</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <style>
-      body {
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-        text-align: justify;
-        background-image: url("bg.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-      }
-
-      nav {
-        height: 60px;
-      }
-
-      nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        height: 100%;
-      }
-
-      nav ul li {
-        margin: 0 40px;
-      }
-
-      nav a {
-        color: rgb(0, 0, 0);
-        text-decoration: none;
-      }
-
-      nav a:hover {
-        color: #ccc;
-      }
-
-      header h1 {
-        text-align: center;
-        padding: 20px;
-      }
-
-      section {
-        margin: 20px;
-      }
-
-      section h2 {
-        font-size: 24px;
-      }
-
-      #login-button {
-        background-color: #4caf50;
-        border: none;
-        color: white;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-
-      #login-button:hover {
-        background-color: #3e8e41;
-      }
-      nav ul img {
-        width: 17%;
-        margin-left: -80%;
-        margin-top: 3%;
-      }
-      section p {
-        font-size: 115%;
-      }
-      footer {
-        background-color: #ffffff57;
-        padding: 20px;
-        text-align: center;
-        margin-top: 40px;
-      }
-      footer ul {
-        list-style-type: none;
-      }
-      footer a {
-        color: #4a4a4a;
-        text-decoration: none;
-      }
-
-      footer a:hover {
-        color: #007bff;
-      }
+        body {
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+            text-align: justify;
+            background-image: url("bg.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        nav {
+            height: 60px;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 100%;
+        }
+        
+        nav ul li {
+            margin: 0 40px;
+        }
+        
+        nav a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+        
+        nav a:hover {
+            color: #ccc;
+        }
+        
+        header h1 {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        section {
+            margin: 20px;
+        }
+        
+        section h2 {
+            font-size: 24px;
+        }
+        
+        #login-button {
+            background-color: #4caf50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        #login-button:hover {
+            background-color: #3e8e41;
+        }
+        
+        nav ul img {
+            width: 17%;
+            margin-left: -80%;
+            margin-top: 3%;
+        }
+        
+        section p {
+            font-size: 115%;
+        }
+        
+        footer {
+            background-color: #63828ddf;
+            padding: 10px;
+            text-align: center;
+            margin-top: 100px;
+            margin-left: 0%;
+            padding-left: 50px;
+            padding-bottom: 40px;
+        }
+        
+        footer ul {
+            list-style-type: none;
+        }
+        
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            color: #007bff;
+        }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <nav>
-      <ul>
-        <li><img src="cyclone logo.jpg" alt="LOGO" /></li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="prediction.html">Prediction</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li>
-          <a href="login.html"><button id="login-button">Login</button></a>
-        </li>
-      </ul>
+        <ul>
+            <li><img src="cyclone logo.jpg" alt="LOGO" /></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="prediction.html">Prediction</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li>
+                <a href="login.html"><button id="login-button">Login</button></a>
+            </li>
+        </ul>
     </nav>
 
     <header>
-      <h1>Measuring Impact, Predicting Paths</h1>
+        <h1><b>Cyclone Intensity And Estimation</b></h1>
     </header>
 
     <section id="home">
-      <h2>Introduction to the website's purpose:</h2>
-      <p>
-        Our website utilizes advanced machine learning algorithms to estimate
-        the intensity of cyclones, providing valuable insights for disaster
-        preparedness and response efforts. Leveraging historical meteorological
-        data, satellite imagery, and other environmental factors, our algorithm
-        predicts the intensity of cyclones with high accuracy, allowing
-        stakeholders to better understand the potential impacts of these
-        powerful storms.
 
+        <div class="container d-flex justify-content-center">
+            <div class="card" style="width: 100vw;">
+                <!-- <img src="image1.jpg" class="card-img-top" alt="..." style="width: 700px; height: 300px;> -->
+                <div class=" card-body ">
+                    <h5 class="card-title "><b>Introduction</b></h5>
+                    <p class="card-text ">Our website utilizes advanced machine learning algorithms to estimate the intensity and distance traveled of cyclones.
+                    </p>
+                    <p>A cyclone is formed when the warm, moist air rises upward over the ocean. As this air moves up, there is a formation of a low-pressure area below. Now the low-pressure area is filled with the high-pressure air from the surroundings.
+                        Again, the next batch of cool air gets warm and moist over the ocean moving upward.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card ">
+            <div class="card-header ">
+
+            </div>
+            <div class="card-body ">
+
+                <p class="card-text "></p>
+                <a href="Feature.html " class="btn btn-primary "><b># Features of cyclone</b></a>
+            </div>
+        </div>
         <br /><br />
-        <b>Key Features:</b>
+        <div class="card ">
+            <div class="card-header ">
+
+            </div>
+            <div class="card-body ">
+
+                <p class="card-text "></p>
+                <a href="Formation.html " class="btn btn-primary "><b># Formation of cyacle</b></a>
+            </div>
+        </div>
         <br /><br />
-        <b>Predictive Modeling:</b> Our machine learning model utilizes a
-        combination of meteorological variables, such as sea surface
-        temperature, wind speed, atmospheric pressure, and humidity, to forecast
-        the intensity of cyclones. By analyzing historical data and training the
-        model on past storm events, we can generate real-time predictions of
-        cyclone intensity with confidence. <br /><br />
-        <b>Interactive Visualization:</b> Users can explore interactive
-        visualizations of cyclone intensity predictions, including maps, charts,
-        and graphs, to gain insights into the spatial and temporal distribution
-        of storm activity. These visualizations enable stakeholders to identify
-        regions at risk and prioritize resource allocation for disaster
-        preparedness and response.
 
-        <br /><br />
-        <b>Mission Statement:</b>
-        <br />
-        Our mission is to harness the power of machine learning and data
-        analytics to enhance our understanding of cyclones and improve our
-        ability to forecast, prepare for, and respond to these devastating
-        natural disasters. By combining cutting-edge technology with
-        interdisciplinary expertise, we strive to empower communities,
-        policymakers, and stakeholders with the knowledge and tools they need to
-        build a more resilient future in the face of climate change and extreme
-        weather events.
-        <br />
-      </p>
-    </section>
-    <section>
-      <h2>Definition</h2>
-      <p>
-        A cyclone, in meteorological parlance, refers to a dynamic and
-        formidable atmospheric phenomenon characterized by a swirling vortex of
-        air with a markedly low-pressure center, typically accompanied by
-        intense convective activity and formidable wind speeds. This
-        meteorological entity arises from the intricate interplay of
-        environmental factors such as warm oceanic temperatures, low vertical
-        wind shear, and substantial atmospheric instability, culminating in the
-        development of a distinctively organized system of thunderstorms and
-        cloud formations. Cyclones manifest in diverse forms, including tropical
-        cyclones arising in tropical regions and extratropical cyclones that
-        emerge in mid-latitude zones, each exhibiting distinctive
-        characteristics in terms of structure, behavior, and associated
-        meteorological hazards.
-      </p>
-    </section>
-    <section>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/coBJtwccRwU?si=45lOWRP14xi8q4AZ"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-        width="80%"
-        height="50%"
-      ></iframe>
-    </section>
-    <section>
-      <h2>Formation of Cyclone:</h2>
-      <p>
-        <b>Warm Ocean Waters:</b> Cyclones form over warm ocean waters,
-        typically with temperatures of 26.5°C (80°F) or higher, providing the
-        necessary heat and moisture. Atmospheric Instability: Atmospheric
-        instability, often caused by temperature differences at different
-        altitudes, allows warm, moist air to rise rapidly, forming convective
-        clouds. <br /><br />
-        <b>Low Pressure Area:</b> A pre-existing disturbance, such as a
-        low-pressure area or a tropical wave, provides the initial trigger for
-        cyclone formation. <br /><br />
 
-        <b>Coriolis Effect:</b> As air converges and rises, the Coriolis effect,
-        caused by the Earth's rotation, deflects the airflow, initiating
-        cyclonic circulation. <br /><br />
-        <b> Formation of a Center:</b> As the system organizes, a distinct
-        low-pressure center forms at the surface, with winds circulating
-        counterclockwise in the Northern Hemisphere and clockwise in the
-        Southern Hemisphere.
-        <br />
-        <br />
-        <b>Convection and Condensation:</b> Continued heat release from
-        condensation of water vapor within convective clouds further fuels the
-        cyclone, enhancing its organization and intensity. <br /><br />
-        <b>Eye Formation:</b> In mature cyclones, a calm, clear area called the
-        eye forms at the center, surrounded by an eyewall of intense convective
-        activity and strong winds. <br /><br />
-        <b>Interaction with Land or Cooler Waters:</b> Cyclones may intensify or
-        weaken as they interact with landmasses or move over cooler ocean
-        waters, with land interaction disrupting the energy supply and cooling
-        waters reducing heat input. <br /><br />
-        <b>Recognition and Naming:</b> Meteorological agencies monitor
-        developing systems and, upon reaching a certain intensity, designate
-        them as tropical depressions, storms, or hurricanes, assigning names
-        based on predefined lists. <br /><br />
-      </p>
-    </section>
 
-    <section id="about">
-      <h2>Brief explanation of cyclones and their potential impact:</h2>
-      <p>
-        <b>Health Hazards:</b> Cyclones can pose significant health risks to
-        affected populations. In addition to injuries and fatalities caused by
-        direct impacts such as collapsing buildings or flying debris, cyclones
-        can lead to the spread of waterborne diseases such as cholera and
-        typhoid fever due to contaminated water sources. Standing water after
-        flooding provides breeding grounds for mosquitoes, increasing the risk
-        of vector-borne diseases like malaria and dengue fever. Disruption of
-        healthcare services, including hospitals and clinics, can further
-        exacerbate these health threats. <br /><br />
-        <b>Infrastructure Damage:</b> The infrastructure damage caused by
-        cyclones can be extensive and long-lasting. Roads, bridges, ports, and
-        airports may be rendered unusable by flooding, debris, or structural
-        damage. Power lines and telecommunications infrastructure can be knocked
-        out by high winds or falling trees, leading to widespread power outages
-        and communication breakdowns. Rebuilding and repairing damaged
-        infrastructure can take months or even years, slowing down recovery
-        efforts and economic recovery. <br /><br />
-        <b>Displacement and Migration:</b> Cyclones often force large numbers of
-        people to evacuate their homes in search of safer shelter. Temporary
-        shelters, evacuation centers, and refugee camps may be set up to
-        accommodate displaced populations, leading to overcrowding and increased
-        vulnerability to disease outbreaks. Some displaced individuals may be
-        unable to return home due to severe damage or destruction, leading to
-        long-term displacement and migration patterns. <br /><br />
-        <b>Psychosocial Impacts:</b> The psychological and emotional toll of
-        cyclones can be profound, particularly for those who experience loss of
-        loved ones, homes, or livelihoods. Survivors may suffer from
-        post-traumatic stress disorder (PTSD), depression, anxiety, or other
-        mental health issues in the aftermath of a cyclone. Children, the
-        elderly, and other vulnerable populations are especially at risk. Access
-        to mental health support services and community-based psychosocial
-        support programs is critical for addressing these needs. <br /><br />
-        <b>Environmental Consequences:</b> Cyclones can have significant
-        environmental consequences beyond immediate damage to ecosystems. For
-        example, the displacement of sediment and nutrients by storm surges can
-        alter coastal habitats and water quality, affecting marine biodiversity
-        and fisheries. Debris washed into rivers and oceans can pose hazards to
-        marine life, including entanglement and ingestion by marine animals.
-        Long-term monitoring and restoration efforts may be needed to mitigate
-        these environmental impacts and promote ecosystem resilience.
-        <br /><br />
-        <b>Social Vulnerability:</b> The impacts of cyclones are often magnified
-        in communities with existing social vulnerabilities, such as poverty,
-        inequality, or marginalization. Socioeconomic factors such as access to
-        resources, healthcare, education, and social networks can influence a
-        community's ability to prepare for, respond to, and recover from cyclone
-        events. Vulnerable populations, including women, children, the elderly,
-        and people with disabilities, may face heightened risks and barriers to
-        recovery, requiring targeted support and inclusive approaches in
-        disaster management efforts. <br /><br />
-        <b>Climate Resilience and Adaptation:</b> Building resilience to
-        cyclones and other climate-related hazards requires a multi-faceted
-        approach that integrates disaster risk reduction, climate change
-        adaptation, and sustainable development strategies. This may include
-        measures such as early warning systems, land-use planning,
-        infrastructure upgrades, ecosystem restoration, community-based
-        preparedness initiatives, and social protection programs. Investing in
-        resilient infrastructure and promoting adaptive governance can help
-        reduce the impacts of cyclones and enhance the ability of communities to
-        withstand future climate-related challenges.
-      </p>
-    </section>
 
-    <footer>
-      <p>
-        Links to relevant resources such as official meteorological agencies,
-        disaster preparedness websites, and emergency contacts:
-      </p>
-      <ul>
-        <li>
-          <a
-            href="https://www.nhc.noaa.gov/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >National Hurricane Center (USA)</a
+        <footer>
+            <p>
+                Links to relevant resources such as official meteorological agencies, disaster preparedness websites, and emergency contacts:
+            </p>
+            <ul>
+                <li>
+                    <a href="https://www.nhc.noaa.gov/ " target="_blank " rel="noopener noreferrer ">National Hurricane Center (USA)</a
           >
         </li>
         <li>
           <a
-            href="https://www.metoffice.gov.uk/weather/warnings-and-advice/tropical-cyclones"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="https://www.metoffice.gov.uk/weather/warnings-and-advice/tropical-cyclones "
+            target="_blank "
+            rel="noopener noreferrer "
             >Met Office (UK)</a
           >
         </li>
         <li>
           <a
-            href="https://www.bom.gov.au/cyclone/index.shtml"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="https://www.bom.gov.au/cyclone/index.shtml "
+            target="_blank "
+            rel="noopener noreferrer "
             >Bureau of Meteorology (Australia)</a
           >
         </li>
         <li>
           <a
-            href="https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weather-preparedness.html"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weather-preparedness.html "
+            target="_blank "
+            rel="noopener noreferrer "
             >Environment Canada</a
           >
         </li>
         <li>
           <a
-            href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies.html"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies.html "
+            target="_blank "
+            rel="noopener noreferrer "
             >American Red Cross</a
           >
         </li>
         <li>
           <a
-            href="https://www.globalcyclonemonitor.com/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="https://www.globalcyclonemonitor.com/ "
+            target="_blank "
+            rel="noopener noreferrer "
             >Global Cyclone Monitor</a
           >
         </li>
